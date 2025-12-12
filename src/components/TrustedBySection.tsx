@@ -27,9 +27,13 @@ const TrustedBySection = () => {
               "We decided to use Trade 4 Me because today it is one of the most 
               widely used automated trading platforms in the mid-market sector. 
               This has given us more flexibility to develop and improve 
-              both the front-end and back-end of our online store."
+              both the front-end and back-end of our trading platform."
             </blockquote>
-            <div className="mt-6 pl-8">
+            <div className="mt-6 pl-8 flex items-center justify-between">
+              <div>
+                <p className="font-semibold text-foreground">Toni Milián Artigas</p>
+                <p className="text-sm text-muted-foreground">IT Director, Natura Selection</p>
+              </div>
               <Button variant="link" className="text-primary p-0 h-auto">
                 Read Case Study →
               </Button>

@@ -1,6 +1,7 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Menu, X, ChevronDown } from "lucide-react";
+import { Menu, X, ChevronDown, Globe } from "lucide-react";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -25,12 +26,13 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <a href="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">T4</span>
-            </div>
-            <span className="text-xl font-bold text-foreground">Trade 4 Me</span>
-          </a>
+          <Link to="/" className="flex items-center gap-2">
+            <img 
+              src="/trade4me_logo.png" 
+              alt="Logo" 
+              className="h-10 w-auto"
+            />
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-8">
@@ -66,17 +68,9 @@ const Header = () => {
 
                 <NavigationMenuItem>
                   <NavigationMenuLink asChild>
-                    <a href="#" className="px-4 py-2 text-sm font-medium text-primary hover:text-primary/80 transition-colors">
-                      Trade 4 Me Pro
-                    </a>
-                  </NavigationMenuLink>
-                </NavigationMenuItem>
-
-                <NavigationMenuItem>
-                  <NavigationMenuLink asChild>
-                    <a href="#" className="px-4 py-2 text-sm font-medium text-foreground hover:text-primary transition-colors">
+                    <Link to="/services" className="px-4 py-2 text-sm font-medium text-foreground hover:text-primary transition-colors">
                       Services
-                    </a>
+                    </Link>
                   </NavigationMenuLink>
                 </NavigationMenuItem>
 
@@ -125,7 +119,13 @@ const Header = () => {
 
           {/* CTA Buttons */}
           <div className="hidden lg:flex items-center gap-4">
+            <Button variant="ghost" size="sm" className="gap-2">
+              <Globe size={16} />
+              <span>en</span>
+              <ChevronDown size={14} />
+            </Button>
             <Button variant="outline">Download</Button>
+            <Button variant="hero" size="lg">Get a live demo</Button>
             <Button variant="hero" size="lg">Try for Free</Button>
           </div>
 
@@ -144,12 +144,16 @@ const Header = () => {
         <div className="lg:hidden bg-background border-t border-border">
           <nav className="container mx-auto px-4 py-4 space-y-4">
             <a href="#" className="block py-2 text-foreground hover:text-primary">Products</a>
-            <a href="#" className="block py-2 text-primary font-medium">Trade 4 Me Pro</a>
-            <a href="#" className="block py-2 text-foreground hover:text-primary">Services</a>
+            <Link to="/services" className="block py-2 text-foreground hover:text-primary">Services</Link>
             <a href="#" className="block py-2 text-foreground hover:text-primary">Partners</a>
             <a href="#" className="block py-2 text-foreground hover:text-primary">Resources</a>
             <div className="pt-4 space-y-2">
+              <Button variant="ghost" className="w-full justify-start gap-2">
+                <Globe size={16} />
+                <span>Language: English</span>
+              </Button>
               <Button variant="outline" className="w-full">Download</Button>
+              <Button variant="hero" className="w-full">Get a live demo</Button>
               <Button variant="hero" className="w-full">Try for Free</Button>
             </div>
           </nav>

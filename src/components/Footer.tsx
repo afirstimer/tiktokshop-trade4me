@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Github, Twitter, Linkedin, Youtube } from "lucide-react";
 
 const Footer = () => {
@@ -8,16 +9,15 @@ const Footer = () => {
         { label: "Automated Trading", href: "#" },
         { label: "Copy Trade", href: "#" },
         { label: "API Trading", href: "#" },
-        { label: "Trade 4 Me Pro", href: "#" },
       ],
     },
     services: {
       title: "Services",
       links: [
-        { label: "Consulting", href: "#" },
-        { label: "Training", href: "#" },
-        { label: "Technical Support", href: "#" },
-        { label: "Implementation", href: "#" },
+        { label: "Professional Services", href: "/services" },
+        { label: "Consulting", href: "/services" },
+        { label: "Training", href: "/services" },
+        { label: "Technical Support", href: "/services" },
       ],
     },
     resources: {
@@ -53,12 +53,13 @@ const Footer = () => {
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mb-12">
           {/* Logo and description */}
           <div className="col-span-2 md:col-span-1">
-            <a href="/" className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-lg">T4</span>
-              </div>
-              <span className="text-xl font-bold">Trade 4 Me</span>
-            </a>
+            <Link to="/" className="flex items-center gap-2 mb-4">
+              <img 
+                src="/trade4me_logo.png" 
+                alt="Logo" 
+                className="h-10 w-auto"
+              />
+            </Link>
             <p className="text-primary-foreground/70 text-sm mb-6">
               The leading automated trading platform for modern investors.
             </p>
@@ -83,12 +84,21 @@ const Footer = () => {
               <ul className="space-y-3">
                 {section.links.map((link, linkIndex) => (
                   <li key={linkIndex}>
-                    <a
-                      href={link.href}
-                      className="text-primary-foreground/70 hover:text-primary-foreground transition-colors text-sm"
-                    >
-                      {link.label}
-                    </a>
+                    {link.href.startsWith("/") ? (
+                      <Link
+                        to={link.href}
+                        className="text-primary-foreground/70 hover:text-primary-foreground transition-colors text-sm"
+                      >
+                        {link.label}
+                      </Link>
+                    ) : (
+                      <a
+                        href={link.href}
+                        className="text-primary-foreground/70 hover:text-primary-foreground transition-colors text-sm"
+                      >
+                        {link.label}
+                      </a>
+                    )}
                   </li>
                 ))}
               </ul>
@@ -99,7 +109,7 @@ const Footer = () => {
         {/* Bottom bar */}
         <div className="pt-8 border-t border-primary-foreground/10 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-primary-foreground/50 text-sm">
-            © 2024 Trade 4 Me. All rights reserved.
+            © 2025 Trade 4 Me. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm text-primary-foreground/50">
             <a href="#" className="hover:text-primary-foreground transition-colors">
