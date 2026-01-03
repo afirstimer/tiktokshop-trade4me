@@ -15,27 +15,28 @@ const Footer = () => {
       title: "Services",
       links: [
         { label: "Professional Services", href: "/services" },
-        { label: "Consulting", href: "/services" },
-        { label: "Training", href: "/services" },
-        { label: "Technical Support", href: "/services" },
+        { label: "Consulting", href: "/consulting" },
+        { label: "Training", href: "/training" },
+        { label: "Technical Support", href: "/technical-support" },
       ],
     },
     resources: {
       title: "Resources",
       links: [
-        { label: "Documentation", href: "#" },
-        { label: "Blog", href: "#" },
-        { label: "Case Studies", href: "#" },
-        { label: "Events", href: "#" },
+        { label: "Documentation", href: "/documentation" },
+        { label: "Blog", href: "/blog" },
+        { label: "Case Studies", href: "/case-studies" },
+        { label: "Events", href: "/events" },
       ],
     },
     company: {
       title: "Company",
       links: [
-        { label: "About Us", href: "#" },
-        { label: "Partners", href: "#" },
-        { label: "Careers", href: "#" },
-        { label: "Contact", href: "#" },
+        { label: "About Us", href: "/about" },
+        { label: "Find a Partner", href: "/find-a-partner" },
+        { label: "Become a Partner", href: "/become-a-partner" },
+        { label: "Careers", href: "/careers" },
+        { label: "Contact", href: "/contact" },
       ],
     },
   };
@@ -112,12 +113,12 @@ const Footer = () => {
             © 2025 Trade 4 Me. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm text-primary-foreground/50">
-            <a href="#" className="hover:text-primary-foreground transition-colors">
+            <Link to="/terms" className="hover:text-primary-foreground transition-colors">
               Terms of Use
-            </a>
-            <a href="#" className="hover:text-primary-foreground transition-colors">
+            </Link>
+            <Link to="/privacy-policy" className="hover:text-primary-foreground transition-colors">
               Privacy Policy
-            </a>
+            </Link>
             <a href="#" className="hover:text-primary-foreground transition-colors">
               Cookies
             </a>

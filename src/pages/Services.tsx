@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -9,7 +10,8 @@ import {
   Briefcase, 
   GraduationCap,
   MessageSquare,
-  Mail
+  Mail,
+  Headphones
 } from "lucide-react";
 
 const Services = () => {
@@ -34,7 +36,8 @@ const Services = () => {
         "Code review services",
         "Team coaching",
         "Best practices guidance"
-      ]
+      ],
+      link: "/consulting"
     },
     {
       icon: Briefcase,
@@ -89,7 +92,20 @@ const Services = () => {
         "Comprehensive programs",
         "Architecture & customization",
         "Best practices training"
-      ]
+      ],
+      link: "/training"
+    },
+    {
+      icon: Headphones,
+      title: "Technical Support",
+      description: "Get the help you need when you need it. Our support team is here to assist you with technical questions, troubleshooting, and guidance on using Trade 4 Me effectively.",
+      features: [
+        "Community support",
+        "Email support",
+        "Priority support options",
+        "Comprehensive documentation"
+      ],
+      link: "/technical-support"
     }
   ];
 
@@ -179,7 +195,7 @@ const Services = () => {
                     <p className="text-muted-foreground mb-6 leading-relaxed">
                       {service.description}
                     </p>
-                    <ul className="space-y-2">
+                    <ul className="space-y-2 mb-4">
                       {service.features.map((feature, featureIndex) => (
                         <li key={featureIndex} className="flex items-start gap-2 text-sm text-muted-foreground">
                           <CheckCircle2 className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
@@ -187,6 +203,11 @@ const Services = () => {
                         </li>
                       ))}
                     </ul>
+                    {service.link && (
+                      <Button variant="outline" size="sm" asChild>
+                        <Link to={service.link}>Learn More</Link>
+                      </Button>
+                    )}
                   </div>
                 );
               })}
@@ -239,4 +260,35 @@ const Services = () => {
 };
 
 export default Services;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
