@@ -5,114 +5,126 @@ import { Button } from "@/components/ui/button";
 import { 
   ArrowRight, 
   CheckCircle2, 
-  Code, 
-  Users, 
-  Briefcase, 
-  GraduationCap,
+  Ship, 
+  Package, 
+  FileCheck, 
+  Plane,
+  Warehouse,
   MessageSquare,
   Mail,
-  Headphones
+  Phone
 } from "lucide-react";
 
 const Services = () => {
   const services = [
     {
-      icon: CheckCircle2,
-      title: "Migration Audit",
-      description: "If you're planning to upgrade your trading platform, our migration audit offers everything you need to prepare for a smooth transition. We conduct a detailed analysis of your codebase, infrastructure, and modules to identify potential challenges and areas for improvement.",
+      icon: Ship,
+      title: "Export Services",
+      description: "Professional export services with full procedure support from document preparation to delivery. We support exporting various types of goods with fast processing times.",
       features: [
-        "Detailed codebase analysis",
-        "Infrastructure review",
-        "Comprehensive migration report",
-        "Step-by-step migration plan"
+        "Export procedure consultation",
+        "Export document preparation",
+        "Customs procedure handling",
+        "International shipping",
+        "Shipment tracking"
       ]
     },
     {
-      icon: MessageSquare,
-      title: "Professional Consulting Services",
-      description: "Our expert consultants provide valuable guidance and support across various aspects of your trading projects. We conduct architecture workshops to help you design scalable and efficient trading solutions.",
+      icon: Package,
+      title: "Import Services",
+      description: "Import services for raw materials and products with optimized costs. Support importing from multiple countries with transparent and clear procedures.",
       features: [
-        "Architecture workshops",
-        "Code review services",
-        "Team coaching",
-        "Best practices guidance"
+        "Import consultation",
+        "Import procedure handling",
+        "Tax and fee calculation",
+        "Transportation from port/warehouse",
+        "Goods delivery"
+      ]
+    },
+    {
+      icon: FileCheck,
+      title: "Customs Services",
+      description: "Fast and accurate customs procedures with a team of experts well-versed in import-export regulations. Support handling all issues arising during customs clearance.",
+      features: [
+        "Customs declaration",
+        "Customs clearance procedure handling",
+        "Tax and fee consultation",
+        "Issue resolution",
+        "Cargo inspection support"
       ],
       link: "/consulting"
     },
     {
-      icon: Briefcase,
-      title: "Project Development Takeover",
-      description: "If you have an ongoing project that needs a fresh perspective or just more manpower, we're here to help. We seamlessly integrate into your existing development process, taking over the project to ensure smooth progress and successful completion.",
+      icon: Plane,
+      title: "International Shipping",
+      description: "Sea, air, and road transportation services with a global partner network. Ensuring goods are transported safely and on time.",
       features: [
-        "Seamless project integration",
-        "Code review & optimization",
-        "Troubleshooting services",
-        "Project management"
+        "Sea freight",
+        "Air freight",
+        "Road freight",
+        "Real-time shipment tracking",
+        "Cargo insurance"
       ]
     },
     {
-      icon: Code,
-      title: "Fresh Trading Project Development Assistance",
-      description: "Whether you're starting a new trading project or looking to revamp your existing platform, our dedicated team is here to support you. We offer comprehensive assistance in every phase of your project.",
+      icon: Warehouse,
+      title: "Warehousing & Distribution",
+      description: "Modern warehouse system ensuring safety and proper storage of goods. Domestic and international distribution services at reasonable costs.",
       features: [
-        "Requirements gathering",
-        "Architecture design",
-        "Implementation & testing",
-        "Deployment support"
+        "Modern warehouses",
+        "Goods storage",
+        "Domestic distribution",
+        "International distribution",
+        "Inventory management"
       ]
     },
     {
-      icon: Users,
-      title: "Extra Developer(s) for an Agency",
-      description: "At Trade 4 Me we understand the importance of having the right resources to execute successful projects. That's why we will help you find the specialists that you require, so you can scale up your development team as needed.",
+      icon: MessageSquare,
+      title: "Import-Export Procedure Consultation",
+      description: "In-depth consultation on import-export regulations and procedures. Support businesses understand the process and prepare all necessary documents.",
       features: [
-        "Scalable team resources",
-        "Expert developers",
-        "Flexible engagement",
-        "Project-specific expertise"
-      ]
-    },
-    {
-      icon: Users,
-      title: "Extra Developer(s) for a Merchant",
-      description: "We understand your needs and want your trading platforms to succeed by providing the necessary resources on time. Whether you need short-term assistance or long-term support, we're here to help you maximize the potential of your trading business.",
-      features: [
-        "Short-term & long-term support",
-        "Dedicated developers",
-        "Timely resource allocation",
-        "Business growth support"
-      ]
-    },
-    {
-      icon: GraduationCap,
-      title: "Professional Trainings",
-      description: "Whether you prefer remote or on-site training, our experienced trainers deliver comprehensive programs tailored to your team's needs. We cover a wide range of topics, including platform architecture, customization, module development, and best practices.",
-      features: [
-        "Remote & on-site options",
-        "Comprehensive programs",
-        "Architecture & customization",
-        "Best practices training"
+        "Legal regulation consultation",
+        "Document preparation guidance",
+        "Tax and fee consultation",
+        "Incoterms consultation",
+        "Issue resolution support"
       ],
-      link: "/training"
-    },
-    {
-      icon: Headphones,
-      title: "Technical Support",
-      description: "Get the help you need when you need it. Our support team is here to assist you with technical questions, troubleshooting, and guidance on using Trade 4 Me effectively.",
-      features: [
-        "Community support",
-        "Email support",
-        "Priority support options",
-        "Comprehensive documentation"
-      ],
-      link: "/technical-support"
+      link: "/consulting"
     }
   ];
 
   const stats = [
-    { value: "78", label: "Partners" },
-    { value: "6000+", label: "Developers" },
-    { value: "2850+", label: "Projects" }
+    { value: "15+", label: "Years of Experience" },
+    { value: "5000+", label: "Shipments Processed" },
+    { value: "50+", label: "Partner Countries" },
+  ];
+
+  const process = [
+    {
+      step: "1",
+      title: "Receive Request",
+      description: "Customer contacts and provides information about import-export needs",
+    },
+    {
+      step: "2",
+      title: "Consultation & Proposal",
+      description: "We consult and propose the optimal solution for each specific case",
+    },
+    {
+      step: "3",
+      title: "Quote & Contract",
+      description: "Detailed, transparent quote and service contract signing",
+    },
+    {
+      step: "4",
+      title: "Execute Shipping & Procedures",
+      description: "Handle customs procedures and ship goods according to commitments",
+    },
+    {
+      step: "5",
+      title: "Delivery & After-sales",
+      description: "Deliver goods and support customers after completion",
+    },
   ];
 
   return (
@@ -124,9 +136,13 @@ const Services = () => {
           <div className="container mx-auto px-4">
             <nav className="text-sm text-muted-foreground">
               <ol className="flex items-center gap-2">
-                <li><a href="/" className="hover:text-primary transition-colors">Home</a></li>
+                <li>
+                  <Link to="/" className="hover:text-primary transition-colors">
+                    Home
+                  </Link>
+                </li>
                 <li>/</li>
-                <li className="text-foreground">Professional Services</li>
+                <li className="text-foreground">Services</li>
               </ol>
             </nav>
           </div>
@@ -137,18 +153,27 @@ const Services = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-3xl">
               <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-                Professional Services
+                Import & Export Services
               </h1>
               <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-                At Trade 4 Me, we understand that trading platform projects are complex and often challenging. 
-                That's why we offer a comprehensive range of services to support you at every stage of your journey, 
-                ensuring a smooth and successful implementation. From initial consultations and strategic planning to 
-                design, development, and ongoing support, we've got your back!
+                We provide comprehensive solutions for all your import-export and logistics needs. 
+                With over 15 years of experience, our professional team is committed to delivering high-quality, 
+                transparent, and cost-optimized services.
               </p>
-              <Button size="lg">
-                Ask for details
-                <ArrowRight className="ml-2" size={18} />
-              </Button>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Button variant="hero" size="lg" asChild>
+                  <Link to="/contact">
+                    Request a Quote
+                    <ArrowRight className="ml-2" size={18} />
+                  </Link>
+                </Button>
+                <Button variant="outline" size="lg" asChild>
+                  <a href="tel:+84901234567">
+                    <Phone className="mr-2" size={18} />
+                    Hotline: +84 90 123 4567
+                  </a>
+                </Button>
+              </div>
             </div>
           </div>
         </section>
@@ -158,14 +183,11 @@ const Services = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-                Services
+                Core Services
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                We would like to provide you with a variety of services to support your trading endeavours. 
-                Our expert team offers tailored solutions and support to help you achieve success. Whether you need 
-                consulting, project development assistance, extra developer(s), or professional training for your teams, 
-                we are here to assist you. With our deep understanding of trading platforms, we strive to deliver 
-                exceptional services that meet your unique requirements and drive growth for your business.
+                We provide complete import-export and logistics services to meet all business needs. 
+                From customs procedures to international shipping, we support you at every step.
               </p>
             </div>
           </div>
@@ -215,6 +237,39 @@ const Services = () => {
           </div>
         </section>
 
+        {/* Process Section */}
+        <section className="py-20 bg-secondary/30">
+          <div className="container mx-auto px-4">
+            <div className="max-w-6xl mx-auto">
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 text-center">
+                Our Work Process
+              </h2>
+              <p className="text-lg text-muted-foreground text-center mb-12">
+                Professional, transparent, and efficient process
+              </p>
+
+              <div className="grid md:grid-cols-5 gap-6">
+                {process.map((item, index) => (
+                  <div
+                    key={index}
+                    className="bg-card border border-border rounded-xl p-6 text-center hover:shadow-lg transition-all duration-300"
+                  >
+                    <div className="w-16 h-16 bg-primary text-primary-foreground rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+                      {item.step}
+                    </div>
+                    <h3 className="text-lg font-semibold text-foreground mb-3">
+                      {item.title}
+                    </h3>
+                    <p className="text-sm text-muted-foreground leading-relaxed">
+                      {item.description}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Stats Section */}
         <section className="py-16 bg-primary text-primary-foreground">
           <div className="container mx-auto px-4">
@@ -229,26 +284,97 @@ const Services = () => {
           </div>
         </section>
 
-        {/* Contact Section */}
+        {/* Why Choose Us */}
         <section className="py-20 bg-background">
+          <div className="container mx-auto px-4">
+            <div className="max-w-6xl mx-auto">
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 text-center">
+                Why Choose Us
+              </h2>
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
+                {[
+                  {
+                    title: "Years of Experience",
+                    description: "Over 15 years operating in import-export"
+                  },
+                  {
+                    title: "Deep Regulatory Knowledge",
+                    description: "Expert team with deep understanding of legal regulations"
+                  },
+                  {
+                    title: "Global Shipping Partners",
+                    description: "Wide network of partners across 50+ countries"
+                  },
+                  {
+                    title: "Transparent Costs",
+                    description: "Detailed quotes, no hidden fees"
+                  }
+                ].map((item, index) => (
+                  <div key={index} className="bg-card border border-border rounded-xl p-6 text-center">
+                    <h3 className="font-semibold text-foreground mb-2">{item.title}</h3>
+                    <p className="text-sm text-muted-foreground">{item.description}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Contact Form Section */}
+        <section className="py-20 bg-secondary/30">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-                Contact Us
+                Request a Quote
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-                To learn more about how our services can benefit your trading business, get in touch with us today. 
-                Contact our team to discuss your project requirements and explore how we can assist you. We look forward 
-                to helping you achieve your trading goals and skyrocket your business!
+                Fill in the information below, and we will contact you as soon as possible
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" variant="hero">
-                  <Mail className="mr-2" size={18} />
-                  Contact Us
-                </Button>
-                <Button size="lg" variant="outline">
-                  Get a live demo
-                </Button>
+              <div className="bg-card border border-border rounded-xl p-8">
+                <form className="space-y-6">
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <div>
+                      <label className="block text-sm font-medium text-foreground mb-2">Name *</label>
+                      <input
+                        type="text"
+                        required
+                        className="w-full px-4 py-2 border border-border rounded-lg bg-background text-foreground"
+                        placeholder="Full name"
+                      />
+                    </div>
+                    <div>
+                      <label className="block text-sm font-medium text-foreground mb-2">Phone *</label>
+                      <input
+                        type="tel"
+                        required
+                        className="w-full px-4 py-2 border border-border rounded-lg bg-background text-foreground"
+                        placeholder="+84 90 123 4567"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-foreground mb-2">Email *</label>
+                    <input
+                      type="email"
+                      required
+                      className="w-full px-4 py-2 border border-border rounded-lg bg-background text-foreground"
+                      placeholder="email@example.com"
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-foreground mb-2">Requirements *</label>
+                    <textarea
+                      required
+                      rows={4}
+                      className="w-full px-4 py-2 border border-border rounded-lg bg-background text-foreground"
+                      placeholder="Describe your import-export needs in detail..."
+                    />
+                  </div>
+                  <Button type="submit" variant="hero" size="lg" className="w-full">
+                    <Mail className="mr-2" size={18} />
+                    Submit Request
+                  </Button>
+                </form>
               </div>
             </div>
           </div>
@@ -260,35 +386,3 @@ const Services = () => {
 };
 
 export default Services;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

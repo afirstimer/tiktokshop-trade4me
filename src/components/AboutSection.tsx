@@ -1,22 +1,23 @@
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
 const AboutSection = () => {
   const features = [
     {
-      title: "#1 Trading Platform",
-      description: "Industry Leading",
+      title: "15+ Years",
+      description: "of Experience",
     },
     {
-      title: "Unlimited",
-      description: "Scalability",
+      title: "5000+",
+      description: "Shipments Processed",
     },
     {
-      title: "Flexible Design",
-      description: "Customizable to your needs",
+      title: "50+",
+      description: "Partner Countries",
     },
     {
-      title: "Powerful API",
-      description: "Headless Commerce",
+      title: "98%",
+      description: "Satisfaction Rate",
     },
   ];
 
@@ -25,17 +26,16 @@ const AboutSection = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-            What is Trade 4 Me?
+            About Us
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Trade 4 Me is an open-source automated trading platform for mid-market brands 
-            and enterprises requiring customized solutions. With a modern approach 
-            to professional project development, it enables the growth of your digital 
-            toolkit at a pace that surpasses competitors and delivers the experience 
-            your customers deserve.
+            We are a company specializing in comprehensive import-export and logistics services, 
+            with over 15 years of experience in international trade. Our professional team 
+            is committed to delivering optimal, transparent, and efficient solutions for all 
+            your import-export needs.
           </p>
-          <Button variant="default" size="lg" className="mt-8">
-            Learn More
+          <Button variant="default" size="lg" className="mt-8" asChild>
+            <Link to="/about">Learn More</Link>
           </Button>
         </div>
 

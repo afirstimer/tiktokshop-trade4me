@@ -1,31 +1,32 @@
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Zap, Globe, Shield, TestTube } from "lucide-react";
+import { Ship, Plane, Warehouse, FileCheck, Globe, Shield } from "lucide-react";
 
 const FeaturesSection = () => {
   const features = [
     {
-      icon: Zap,
-      title: "Headless & PWA Ready",
+      icon: Ship,
+      title: "International Shipping",
       description:
-        "Trade 4 Me comes with a powerful customizable REST API that works well with your frontend of choice or your microservices architecture.",
+        "Sea, air, and road transportation services with a global partner network. Ensuring goods are transported safely and on time.",
     },
     {
-      icon: Globe,
-      title: "Easy to Host & Scale",
+      icon: FileCheck,
+      title: "Professional Customs Procedures",
       description:
-        "Trade 4 Me will accelerate your business growth and adapt to your evolving needs. It works great on standard VPS but can be used with Docker and Kubernetes.",
+        "Expert team well-versed in import-export regulations, supporting fast and accurate customs procedures. Consultation on taxes, fees, and related regulations.",
+    },
+    {
+      icon: Warehouse,
+      title: "Warehousing & Distribution",
+      description:
+        "Modern warehouse system ensuring safety and proper storage of goods. Domestic and international distribution services at reasonable costs.",
     },
     {
       icon: Shield,
-      title: "Quality Standards & No Technical Debt",
+      title: "Trust & Transparency",
       description:
-        "With the pace of change in the commerce world, you can't afford a revolution every few years. You need an evolutionary approach and the highest quality standards.",
-    },
-    {
-      icon: TestTube,
-      title: "Tested & Testable",
-      description:
-        "Detect and fix issues before they affect your customers and revenue. Trade 4 Me is a pioneer in automated testing for trading platforms.",
+        "Commitment to transparency in costs, timelines, and processes. Comprehensive cargo insurance ensuring maximum benefits for customers.",
     },
   ];
 
@@ -34,13 +35,12 @@ const FeaturesSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Modern Software
+            Core Services
             <br />
-            <span className="text-primary">and Development Methodology</span>
+            <span className="text-primary">Import & Export & Logistics</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Discover why Trade 4 Me is widely recognized by the community of CTOs, architects, 
-            and developers from leading companies and agencies as the best trading platform.
+            Providing comprehensive solutions for all your import-export and logistics needs
           </p>
         </div>
 
@@ -48,7 +48,7 @@ const FeaturesSection = () => {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="feature-card bg-card border border-border rounded-xl group"
+              className="feature-card bg-card border border-border rounded-xl p-6 group hover:shadow-lg transition-all duration-300"
             >
               <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
                 <feature.icon className="w-6 h-6 text-primary" />
@@ -64,8 +64,8 @@ const FeaturesSection = () => {
         </div>
 
         <div className="text-center mt-12">
-          <Button variant="default" size="lg">
-            Learn More
+          <Button variant="default" size="lg" asChild>
+            <Link to="/services">View All Services</Link>
           </Button>
         </div>
       </div>

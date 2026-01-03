@@ -42,49 +42,49 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      content: "contact@trade4me.com",
-      link: "mailto:contact@trade4me.com",
+      content: "info@trade4me.com",
+      link: "mailto:info@trade4me.com",
     },
     {
       icon: Phone,
-      title: "Phone",
-      content: "+1 (555) 123-4567",
-      link: "tel:+15551234567",
+      title: "Hotline",
+      content: "090 123 4567",
+      link: "tel:+84901234567",
     },
     {
       icon: MapPin,
-      title: "Address",
-      content: "123 Trading Street, 10001 New York, USA",
+      title: "Địa chỉ",
+      content: "123 Đường Thương mại, Quận 1, TP. Hồ Chí Minh",
       link: "#",
     },
     {
       icon: Clock,
-      title: "Business Hours",
-      content: "Monday - Friday: 9:00 AM - 6:00 PM EST",
+      title: "Giờ làm việc",
+      content: "Thứ 2 - Thứ 6: 8:00 - 17:30 | Thứ 7: 8:00 - 12:00",
       link: "#",
     },
   ];
 
   const departments = [
     {
-      title: "Sales & Partnerships",
+      title: "Bộ phận Kinh doanh",
       email: "sales@trade4me.com",
-      description: "Interested in our products or becoming a partner?",
+      description: "Yêu cầu báo giá hoặc tư vấn dịch vụ xuất nhập khẩu?",
     },
     {
-      title: "Support",
+      title: "Hỗ trợ Khách hàng",
       email: "support@trade4me.com",
-      description: "Need technical assistance or have questions?",
+      description: "Cần hỗ trợ về thủ tục hoặc có câu hỏi?",
     },
     {
-      title: "Media & Press",
-      email: "press@trade4me.com",
-      description: "Media inquiries and press releases",
+      title: "Truyền thông & Báo chí",
+      email: "media@trade4me.com",
+      description: "Thông tin truyền thông và thông cáo báo chí",
     },
     {
-      title: "Careers",
+      title: "Tuyển dụng",
       email: "careers@trade4me.com",
-      description: "Join our team and help shape the future",
+      description: "Tham gia đội ngũ của chúng tôi",
     },
   ];
 
@@ -114,11 +114,11 @@ const Contact = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-                Get in Touch
+                Liên Hệ Với Chúng Tôi
               </h1>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Have a question or want to learn more about Trade 4 Me? We're here to help. 
-                Reach out to us and we'll get back to you as soon as possible.
+                Có câu hỏi hoặc muốn tìm hiểu thêm về dịch vụ xuất nhập khẩu của chúng tôi? 
+                Chúng tôi luôn sẵn sàng hỗ trợ. Liên hệ với chúng tôi và chúng tôi sẽ phản hồi trong thời gian sớm nhất.
               </p>
             </div>
           </div>
@@ -156,12 +156,12 @@ const Contact = () => {
                 {/* Contact Form */}
                 <div>
                   <h2 className="text-3xl font-bold text-foreground mb-6">
-                    Send us a Message
+                    Gửi Tin Nhắn Cho Chúng Tôi
                   </h2>
                   <form onSubmit={handleSubmit} className="space-y-6">
                     <div className="grid md:grid-cols-2 gap-6">
                       <div>
-                        <Label htmlFor="name">Name *</Label>
+                        <Label htmlFor="name">Họ và tên *</Label>
                         <Input
                           id="name"
                           name="name"
@@ -169,6 +169,7 @@ const Contact = () => {
                           onChange={handleChange}
                           required
                           className="mt-2"
+                          placeholder="Nguyễn Văn A"
                         />
                       </div>
                       <div>
@@ -181,21 +182,23 @@ const Contact = () => {
                           onChange={handleChange}
                           required
                           className="mt-2"
+                          placeholder="email@example.com"
                         />
                       </div>
                     </div>
                     <div>
-                      <Label htmlFor="company">Company</Label>
+                      <Label htmlFor="company">Công ty</Label>
                       <Input
                         id="company"
                         name="company"
                         value={formData.company}
                         onChange={handleChange}
                         className="mt-2"
+                        placeholder="Tên công ty"
                       />
                     </div>
                     <div>
-                      <Label htmlFor="subject">Subject *</Label>
+                      <Label htmlFor="subject">Chủ đề *</Label>
                       <Input
                         id="subject"
                         name="subject"
@@ -203,10 +206,11 @@ const Contact = () => {
                         onChange={handleChange}
                         required
                         className="mt-2"
+                        placeholder="Ví dụ: Yêu cầu báo giá xuất khẩu"
                       />
                     </div>
                     <div>
-                      <Label htmlFor="message">Message *</Label>
+                      <Label htmlFor="message">Nội dung *</Label>
                       <Textarea
                         id="message"
                         name="message"
@@ -215,11 +219,12 @@ const Contact = () => {
                         required
                         rows={6}
                         className="mt-2"
+                        placeholder="Mô tả chi tiết nhu cầu xuất nhập khẩu của bạn..."
                       />
                     </div>
                     <Button type="submit" variant="hero" size="lg" className="gap-2">
                       <Send size={18} />
-                      Send Message
+                      Gửi tin nhắn
                     </Button>
                   </form>
                 </div>
@@ -227,7 +232,7 @@ const Contact = () => {
                 {/* Departments */}
                 <div>
                   <h2 className="text-3xl font-bold text-foreground mb-6">
-                    Contact by Department
+                    Liên Hệ Theo Bộ Phận
                   </h2>
                   <div className="space-y-4">
                     {departments.map((dept, index) => (
@@ -249,16 +254,16 @@ const Contact = () => {
 
                   {/* Office Location */}
                   <div className="mt-8 bg-secondary/30 rounded-xl p-6">
-                    <h3 className="font-semibold text-foreground mb-4">Visit Our Office</h3>
+                    <h3 className="font-semibold text-foreground mb-4">Thăm Văn Phòng Chúng Tôi</h3>
                     <div className="space-y-2 text-muted-foreground">
-                      <p>123 Trading Street</p>
-                      <p>10001 New York, USA</p>
+                      <p>123 Đường Thương mại</p>
+                      <p>Quận 1, TP. Hồ Chí Minh, Việt Nam</p>
                       <p className="mt-4">
-                        <strong className="text-foreground">Business Hours:</strong>
+                        <strong className="text-foreground">Giờ làm việc:</strong>
                       </p>
-                      <p>Monday - Friday: 9:00 AM - 6:00 PM EST</p>
-                      <p>Saturday: 10:00 AM - 4:00 PM EST</p>
-                      <p>Sunday: Closed</p>
+                      <p>Thứ 2 - Thứ 6: 8:00 - 17:30</p>
+                      <p>Thứ 7: 8:00 - 12:00</p>
+                      <p>Chủ nhật: Nghỉ</p>
                     </div>
                   </div>
                 </div>

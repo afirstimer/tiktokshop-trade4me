@@ -15,10 +15,10 @@
     --popover: 0 0% 100%;
     --popover-foreground: 210 20% 20%;
 
-    --primary: 164 60% 42%;
+    --primary: 217 91% 40%;
     --primary-foreground: 0 0% 100%;
-    --primary-light: 164 55% 50%;
-    --primary-dark: 164 65% 35%;
+    --primary-light: 217 85% 50%;
+    --primary-dark: 217 95% 30%;
 
     --secondary: 210 20% 96%;
     --secondary-foreground: 210 20% 20%;
@@ -26,7 +26,7 @@
     --muted: 210 20% 96%;
     --muted-foreground: 210 15% 50%;
 
-    --accent: 164 60% 42%;
+    --accent: 217 91% 40%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
@@ -34,31 +34,31 @@
 
     --border: 210 20% 90%;
     --input: 210 20% 90%;
-    --ring: 164 60% 42%;
+    --ring: 217 91% 40%;
 
     --radius: 0.5rem;
 
-    /* Hero gradient */
-    --hero-gradient-start: 164 60% 42%;
-    --hero-gradient-mid: 170 55% 38%;
-    --hero-gradient-end: 175 50% 32%;
+    /* Hero gradient - Corporate Blue */
+    --hero-gradient-start: 217 91% 40%;
+    --hero-gradient-mid: 217 85% 35%;
+    --hero-gradient-end: 217 95% 30%;
 
-    /* Custom colors */
-    --teal-50: 164 60% 96%;
-    --teal-100: 164 55% 90%;
-    --teal-200: 164 55% 80%;
-    --teal-500: 164 60% 42%;
-    --teal-600: 164 65% 35%;
-    --teal-700: 164 70% 28%;
+    /* Custom colors - Blue/Navy */
+    --blue-50: 217 100% 97%;
+    --blue-100: 217 95% 90%;
+    --blue-200: 217 90% 80%;
+    --blue-500: 217 91% 40%;
+    --blue-600: 217 95% 30%;
+    --blue-700: 217 100% 25%;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 164 60% 42%;
+    --sidebar-primary: 217 91% 40%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 164 55% 95%;
-    --sidebar-accent-foreground: 164 60% 30%;
+    --sidebar-accent: 217 100% 95%;
+    --sidebar-accent-foreground: 217 95% 30%;
     --sidebar-border: 210 20% 90%;
-    --sidebar-ring: 164 60% 42%;
+    --sidebar-ring: 217 91% 40%;
   }
 
   .dark {
@@ -71,8 +71,8 @@
     --popover: 210 25% 12%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 164 55% 50%;
-    --primary-foreground: 210 25% 8%;
+    --primary: 217 85% 50%;
+    --primary-foreground: 0 0% 100%;
 
     --secondary: 210 25% 15%;
     --secondary-foreground: 0 0% 98%;
@@ -80,24 +80,24 @@
     --muted: 210 25% 15%;
     --muted-foreground: 210 15% 60%;
 
-    --accent: 164 55% 50%;
-    --accent-foreground: 210 25% 8%;
+    --accent: 217 85% 50%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62% 40%;
     --destructive-foreground: 0 0% 98%;
 
     --border: 210 25% 20%;
     --input: 210 25% 20%;
-    --ring: 164 55% 50%;
+    --ring: 217 85% 50%;
     
     --sidebar-background: 210 25% 10%;
     --sidebar-foreground: 0 0% 95%;
-    --sidebar-primary: 164 55% 50%;
+    --sidebar-primary: 217 85% 50%;
     --sidebar-primary-foreground: 0 0% 100%;
     --sidebar-accent: 210 25% 15%;
     --sidebar-accent-foreground: 0 0% 95%;
     --sidebar-border: 210 25% 20%;
-    --sidebar-ring: 164 55% 50%;
+    --sidebar-ring: 217 85% 50%;
   }
 }
 
@@ -120,9 +120,9 @@
   .hero-gradient {
     background: linear-gradient(
       135deg,
-      hsl(164 60% 28%) 0%,
-      hsl(170 55% 24%) 50%,
-      hsl(175 50% 20%) 100%
+      hsl(217 91% 40%) 0%,
+      hsl(217 85% 35%) 50%,
+      hsl(217 95% 30%) 100%
     );
   }
 
@@ -139,7 +139,7 @@
 
   .text-gradient {
     @apply bg-clip-text text-transparent;
-    background-image: linear-gradient(135deg, hsl(164 60% 42%), hsl(170 55% 38%));
+    background-image: linear-gradient(135deg, hsl(217 91% 40%), hsl(217 85% 35%));
   }
 
   .btn-hero-primary {

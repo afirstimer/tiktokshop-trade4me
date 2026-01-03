@@ -4,58 +4,58 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { 
   MessageSquare, 
-  Code, 
+  FileCheck, 
   Users, 
   Target,
   CheckCircle2,
-  ArrowRight,
-  Mail
+  Mail,
+  Phone
 } from "lucide-react";
 
 const Consulting = () => {
   const services = [
     {
-      icon: Code,
-      title: "Architecture Consulting",
-      description: "Get expert guidance on designing scalable and maintainable trading platform architectures. Our consultants help you make the right technical decisions from the start.",
+      icon: FileCheck,
+      title: "Tư vấn Thủ tục Xuất Nhập Khẩu",
+      description: "Nhận tư vấn chuyên sâu về các quy định, thủ tục xuất nhập khẩu. Chúng tôi giúp bạn hiểu rõ quy trình và chuẩn bị đầy đủ hồ sơ cần thiết.",
       features: [
-        "System architecture design",
-        "Technology stack recommendations",
-        "Scalability planning",
-        "Performance optimization strategies",
+        "Tư vấn quy định pháp luật",
+        "Hướng dẫn chuẩn bị hồ sơ",
+        "Tư vấn thuế, phí",
+        "Tư vấn Incoterms",
       ],
     },
     {
       icon: Users,
-      title: "Team Coaching",
-      description: "Empower your development team with best practices, code reviews, and hands-on training. We help your team become Trade 4 Me experts.",
+      title: "Tư vấn Chiến lược Xuất Nhập Khẩu",
+      description: "Tư vấn chiến lược xuất nhập khẩu phù hợp với doanh nghiệp của bạn. Chúng tôi giúp bạn lập kế hoạch và tối ưu hóa quy trình.",
       features: [
-        "Code review sessions",
-        "Best practices workshops",
-        "Pair programming sessions",
-        "Team knowledge transfer",
+        "Phân tích nhu cầu",
+        "Lập kế hoạch xuất nhập khẩu",
+        "Tối ưu hóa chi phí",
+        "Đánh giá rủi ro",
       ],
     },
     {
       icon: Target,
-      title: "Project Strategy",
-      description: "Plan your trading platform project with confidence. Our consultants help you define requirements, set realistic timelines, and avoid common pitfalls.",
+      title: "Tư vấn Thị trường",
+      description: "Tư vấn về thị trường xuất nhập khẩu, giúp bạn xác định cơ hội và thách thức khi mở rộng kinh doanh quốc tế.",
       features: [
-        "Requirements gathering",
-        "Project planning",
-        "Risk assessment",
-        "Migration strategies",
+        "Phân tích thị trường",
+        "Đánh giá cơ hội",
+        "Tư vấn sản phẩm phù hợp",
+        "Chiến lược mở rộng",
       ],
     },
     {
       icon: MessageSquare,
-      title: "Technical Audits",
-      description: "Get a comprehensive review of your existing trading platform. We identify issues, suggest improvements, and help you optimize your setup.",
+      title: "Tư vấn Pháp lý",
+      description: "Tư vấn về các vấn đề pháp lý liên quan đến xuất nhập khẩu, giúp doanh nghiệp tuân thủ đúng quy định.",
       features: [
-        "Code quality assessment",
-        "Security audit",
-        "Performance analysis",
-        "Optimization recommendations",
+        "Tư vấn quy định pháp luật",
+        "Đánh giá rủi ro pháp lý",
+        "Hỗ trợ giải quyết vấn đề",
+        "Cập nhật quy định mới",
       ],
     },
   ];
@@ -63,23 +63,23 @@ const Consulting = () => {
   const process = [
     {
       step: "1",
-      title: "Initial Consultation",
-      description: "We discuss your needs, challenges, and goals in a free consultation call.",
+      title: "Tiếp nhận yêu cầu",
+      description: "Chúng tôi lắng nghe nhu cầu và thách thức của bạn trong một cuộc tư vấn miễn phí.",
     },
     {
       step: "2",
-      title: "Proposal & Planning",
-      description: "We create a customized proposal with timeline and deliverables.",
+      title: "Phân tích & Đề xuất",
+      description: "Chúng tôi phân tích tình huống và tạo đề xuất tùy chỉnh với timeline và kết quả mong đợi.",
     },
     {
       step: "3",
-      title: "Engagement",
-      description: "Our consultants work closely with your team to deliver results.",
+      title: "Thực hiện tư vấn",
+      description: "Các chuyên gia tư vấn của chúng tôi làm việc chặt chẽ với bạn để đạt được kết quả.",
     },
     {
       step: "4",
-      title: "Follow-up",
-      description: "We ensure you have everything you need to succeed independently.",
+      title: "Theo dõi & Hỗ trợ",
+      description: "Chúng tôi đảm bảo bạn có mọi thứ cần thiết để thành công độc lập.",
     },
   ];
 
@@ -94,17 +94,17 @@ const Consulting = () => {
               <ol className="flex items-center gap-2">
                 <li>
                   <Link to="/" className="hover:text-primary transition-colors">
-                    Home
+                    Trang chủ
                   </Link>
                 </li>
                 <li>/</li>
                 <li>
                   <Link to="/services" className="hover:text-primary transition-colors">
-                    Services
+                    Dịch vụ
                   </Link>
                 </li>
                 <li>/</li>
-                <li className="text-foreground">Consulting</li>
+                <li className="text-foreground">Tư vấn</li>
               </ol>
             </nav>
           </div>
@@ -115,18 +115,27 @@ const Consulting = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl">
               <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-                Professional Consulting Services
+                Dịch Vụ Tư Vấn Chuyên Nghiệp
               </h1>
               <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-                Our expert consultants provide valuable guidance and support across various aspects of your trading projects. 
-                We conduct architecture workshops to help you design scalable and efficient trading solutions.
+                Các chuyên gia tư vấn của chúng tôi cung cấp hướng dẫn và hỗ trợ có giá trị trong các khía cạnh khác nhau 
+                của dự án xuất nhập khẩu của bạn. Chúng tôi tiến hành các buổi tư vấn để giúp bạn thiết kế 
+                giải pháp xuất nhập khẩu hiệu quả và có thể mở rộng.
               </p>
-              <Button variant="hero" size="lg" className="gap-2" asChild>
-                <Link to="/contact">
-                  <Mail size={18} />
-                  Get in Touch
-                </Link>
-              </Button>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Button variant="hero" size="lg" className="gap-2" asChild>
+                  <Link to="/contact">
+                    <Mail size={18} />
+                    Liên hệ ngay
+                  </Link>
+                </Button>
+                <Button variant="outline" size="lg" asChild>
+                  <a href="tel:+84901234567">
+                    <Phone size={18} />
+                    Hotline: 090 123 4567
+                  </a>
+                </Button>
+              </div>
             </div>
           </div>
         </section>
@@ -136,10 +145,10 @@ const Consulting = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 text-center">
-                Our Consulting Services
+                Dịch Vụ Tư Vấn Của Chúng Tôi
               </h2>
               <p className="text-lg text-muted-foreground text-center mb-12">
-                Comprehensive consulting to help you succeed with Trade 4 Me
+                Tư vấn toàn diện để giúp bạn thành công với xuất nhập khẩu
               </p>
 
               <div className="grid md:grid-cols-2 gap-8">
@@ -180,10 +189,10 @@ const Consulting = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 text-center">
-                Our Consulting Process
+                Quy Trình Tư Vấn
               </h2>
               <p className="text-lg text-muted-foreground text-center mb-12">
-                Simple steps to get started with our consulting services
+                Các bước đơn giản để bắt đầu với dịch vụ tư vấn của chúng tôi
               </p>
 
               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -213,15 +222,15 @@ const Consulting = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Ready to Get Expert Guidance?
+                Sẵn Sàng Nhận Tư Vấn Chuyên Nghiệp?
               </h2>
               <p className="text-lg mb-8 opacity-90">
-                Contact our consulting team to discuss how we can help you succeed with Trade 4 Me.
+                Liên hệ với đội ngũ tư vấn của chúng tôi để thảo luận về cách chúng tôi có thể giúp bạn thành công với xuất nhập khẩu.
               </p>
               <Button variant="heroOutline" size="lg" className="gap-2" asChild>
                 <Link to="/contact">
                   <Mail size={18} />
-                  Contact Our Consultants
+                  Liên hệ Tư vấn
                 </Link>
               </Button>
             </div>
@@ -234,4 +243,3 @@ const Consulting = () => {
 };
 
 export default Consulting;
-

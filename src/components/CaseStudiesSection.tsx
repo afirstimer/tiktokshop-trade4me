@@ -1,62 +1,58 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, ExternalLink } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const CaseStudiesSection = () => {
   const caseStudies = [
     {
-      title: "Natura Selection",
-      description: "Leading beauty retailer transformed their trading operations with Trade 4 Me",
-      quote: "We have decided to use Trade 4 Me because today it is one of the most used automated trading platforms in the mid-market sector. This has given us greater agility to advance and improve both the front and the back of our online store.",
-      author: "Toni Milián Artigas",
-      role: "IT Director",
-      company: "Natura Selection",
-      logo: "Natura",
-      logoImage: null, // "/logos/natura.png" - add when available
-      link: "#",
-    },
-    {
-      title: "Jagermeister",
-      description: "Premium spirits brand enhanced their trading capabilities",
-      quote: "Trade 4 Me has revolutionized how we approach automated trading, giving us the flexibility and power we needed.",
+      title: "Textile Manufacturing Company",
+      description: "Large-scale textile export to EU market",
+      quote: "Trade 4 Me helped us export thousands of textile shipments to Europe smoothly. Fast procedures, reasonable costs, and professional service.",
       author: "John Smith",
-      role: "Trading Director",
-      company: "Jagermeister",
-      logo: "Jagermeister",
-      logoImage: null, // "/logos/jagermeister.png" - add when available
-      link: "#",
+      role: "Business Director",
+      company: "ABC Textile Company",
+      logo: "ABC",
+      link: "/case-studies",
     },
     {
-      title: "Relais & Châteaux",
-      description: "Luxury hospitality group streamlined their investment operations",
-      quote: "The platform's scalability and reliability have been game-changers for our business model.",
-      author: "Marie Dubois",
-      role: "CFO",
-      company: "Relais & Châteaux",
-      logo: "R&C",
-      logoImage: null, // "/logos/relais-chateaux.png" - add when available
-      link: "#",
+      title: "Food Processing Company",
+      description: "Importing food ingredients from multiple countries",
+      quote: "We need to import ingredients from many countries. Trade 4 Me supported us in handling procedures professionally, ensuring goods arrived on time.",
+      author: "Sarah Johnson",
+      role: "Procurement Manager",
+      company: "XYZ Food Company",
+      logo: "XYZ",
+      link: "/case-studies",
     },
     {
-      title: "HBX",
-      description: "Fashion e-commerce platform optimized their trading strategy",
-      quote: "Trade 4 Me's headless architecture perfectly fits our modern tech stack and business needs.",
-      author: "David Chen",
-      role: "CTO",
-      company: "HBX",
-      logo: "HBX",
-      logoImage: null, // "/logos/hbx.png" - add when available
-      link: "#",
+      title: "Industrial Manufacturing",
+      description: "Exporting industrial products to US market",
+      quote: "Trade 4 Me's service is very professional. They understand US export regulations well and helped us save a lot of time and costs.",
+      author: "Michael Chen",
+      role: "CEO",
+      company: "DEF Industrial Factory",
+      logo: "DEF",
+      link: "/case-studies",
     },
     {
-      title: "Reiss",
-      description: "British fashion brand accelerated their digital transformation",
-      quote: "We've seen significant improvements in our trading efficiency since implementing Trade 4 Me.",
-      author: "Sarah Williams",
-      role: "Head of Digital",
-      company: "Reiss",
-      logo: "Reiss",
-      logoImage: null, // "/logos/reiss.png" - add when available
-      link: "#",
+      title: "Trading Company",
+      description: "Import and distribution of consumer goods",
+      quote: "With a wide network of partners, Trade 4 Me helps us import goods from many countries with the most optimal costs.",
+      author: "Emily Davis",
+      role: "Business Director",
+      company: "GHI Trading Company",
+      logo: "GHI",
+      link: "/case-studies",
+    },
+    {
+      title: "Agricultural Company",
+      description: "Exporting agricultural products to Japanese market",
+      quote: "Export procedures for agricultural products to Japan are very complex, but Trade 4 Me supported us in handling them smoothly. Very satisfied with the service.",
+      author: "David Wilson",
+      role: "Director",
+      company: "JKL Agricultural Company",
+      logo: "JKL",
+      link: "/case-studies",
     },
   ];
 
@@ -65,10 +61,10 @@ const CaseStudiesSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Trade 4 Me Case Studies
+            Case Studies
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Discover how leading brands have transformed their trading operations with Trade 4 Me
+            Discover how businesses have succeeded with our import-export services
           </p>
         </div>
 
@@ -80,17 +76,9 @@ const CaseStudiesSection = () => {
             >
               {/* Logo */}
               <div className="mb-4">
-                {study.logoImage ? (
-                  <img
-                    src={study.logoImage}
-                    alt={`${study.company} logo`}
-                    className="h-16 w-auto object-contain mb-4"
-                  />
-                ) : (
-                  <div className="w-20 h-20 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                    <span className="text-2xl font-bold text-primary">{study.logo}</span>
-                  </div>
-                )}
+                <div className="w-20 h-20 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                  <span className="text-2xl font-bold text-primary">{study.logo}</span>
+                </div>
               </div>
 
               <h3 className="text-xl font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
@@ -115,10 +103,10 @@ const CaseStudiesSection = () => {
                 className="w-full justify-between group-hover:text-primary"
                 asChild
               >
-                <a href={study.link}>
-                  Read Case Study
+                <Link to={study.link}>
+                  View Case Study
                   <ArrowRight size={16} className="ml-2 group-hover:translate-x-1 transition-transform" />
-                </a>
+                </Link>
               </Button>
             </div>
           ))}
@@ -126,10 +114,10 @@ const CaseStudiesSection = () => {
 
         <div className="text-center">
           <Button variant="default" size="lg" asChild>
-            <a href="#">
+            <Link to="/case-studies">
               View All Case Studies
               <ExternalLink size={16} className="ml-2" />
-            </a>
+            </Link>
           </Button>
         </div>
       </div>
@@ -138,4 +126,3 @@ const CaseStudiesSection = () => {
 };
 
 export default CaseStudiesSection;
-

@@ -3,40 +3,41 @@ import { Github, Twitter, Linkedin, Youtube } from "lucide-react";
 
 const Footer = () => {
   const footerLinks = {
-    product: {
-      title: "Product",
-      links: [
-        { label: "Automated Trading", href: "#" },
-        { label: "Copy Trade", href: "#" },
-        { label: "API Trading", href: "#" },
-      ],
-    },
     services: {
       title: "Services",
       links: [
-        { label: "Professional Services", href: "/services" },
-        { label: "Consulting", href: "/consulting" },
-        { label: "Training", href: "/training" },
-        { label: "Technical Support", href: "/technical-support" },
+        { label: "Export Services", href: "/services" },
+        { label: "Import Services", href: "/services" },
+        { label: "Customs Services", href: "/services" },
+        { label: "International Shipping", href: "/services" },
+        { label: "Warehousing & Distribution", href: "/services" },
       ],
     },
     resources: {
       title: "Resources",
       links: [
-        { label: "Documentation", href: "/documentation" },
         { label: "Blog", href: "/blog" },
         { label: "Case Studies", href: "/case-studies" },
-        { label: "Events", href: "/events" },
+        { label: "Consulting", href: "/consulting" },
+        { label: "Training", href: "/training" },
       ],
     },
     company: {
       title: "Company",
       links: [
         { label: "About Us", href: "/about" },
-        { label: "Find a Partner", href: "/find-a-partner" },
-        { label: "Become a Partner", href: "/become-a-partner" },
+        { label: "Partners", href: "/find-a-partner" },
         { label: "Careers", href: "/careers" },
         { label: "Contact", href: "/contact" },
+      ],
+    },
+    support: {
+      title: "Support",
+      links: [
+        { label: "Technical Support", href: "/technical-support" },
+        { label: "FAQ", href: "/contact" },
+        { label: "Privacy Policy", href: "/privacy-policy" },
+        { label: "Terms of Use", href: "/terms" },
       ],
     },
   };
@@ -62,7 +63,7 @@ const Footer = () => {
               />
             </Link>
             <p className="text-primary-foreground/70 text-sm mb-6">
-              The leading automated trading platform for modern investors.
+              Complete import-export & logistics solutions for businesses.
             </p>
             <div className="flex gap-4">
               {socialLinks.map((social, index) => (

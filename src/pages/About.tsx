@@ -2,90 +2,70 @@ import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { Users, Heart, Code, Globe } from "lucide-react";
+import { Users, Shield, Globe, Award } from "lucide-react";
 
 const About = () => {
   const history = [
     {
       year: "2010",
-      event: "The foundation of Trade 4 Me began when our founder developed the first automated trading platform for a small trading company.",
+      event: "Trade 4 Me company was founded, beginning operations in import-export and logistics.",
     },
     {
-      year: "2011",
-      event: "The platform has been rewritten on top of modern technologies and published as Open Source on GitHub, which marks the beginning of the 'Trade 4 Me' Open Source project.",
-    },
-    {
-      year: "2013",
-      event: "With the help of the community, the first pre-ALPHA versions of Trade 4 Me have been developed.",
-    },
-    {
-      year: "2014",
-      event: "A software house has been co-founded, which developed custom trading applications on top of Trade 4 Me and supported the Open Source platform itself.",
+      year: "2012",
+      event: "Expanded services to Southeast Asian market, establishing first partner network.",
     },
     {
       year: "2015",
-      event: "The team of the software house has expanded and become the foundation for the future Trade 4 Me Team.",
-    },
-    {
-      year: "2016",
-      event: "A major rewrite of the platform began, and the first ALPHA & BETA versions have been released.",
+      event: "Achieved ISO certification for quality management and expanded customs specialist team.",
     },
     {
       year: "2017",
-      event: "The Trade 4 Me Organization has been kickstarted, and the first stable version (v1.0.0) of the platform has been released.",
-    },
-    {
-      year: "2018",
-      event: "We have clarified our purpose and ratified our core values. The Trade 4 Me Solution Partner Program launched, and the first agencies joined. Our business tripled, and the team expanded.",
+      event: "Expanded services to European and US markets, increasing shipments processed to 1000+ per year.",
     },
     {
       year: "2019",
-      event: "We have evolved our business model and introduced a commercial edition called Trade 4 Me Plus, which was quickly adopted by first Customers!",
+      event: "Invested in modern warehouse system and advanced logistics management technology.",
     },
     {
       year: "2021",
-      event: "We have reached 1 million of installs of the 'trade4me/trade4me' package.",
-    },
-    {
-      year: "2022",
-      event: "We have launched Trade 4 Me Conference, a first ever conference fully dedicated to automated trading platforms, attracting a diverse and engaged audience from around the world.",
+      event: "Reached milestone of 5000+ shipments processed successfully, expanded services to 50+ countries.",
     },
     {
       year: "2023",
-      event: "New management joins Trade 4 Me continuing its vision started in 2011, into the trading platform of 2020s.",
+      event: "Received 'Excellence in Logistics Company' award and expanded team to 100+ employees.",
+    },
+    {
+      year: "2024",
+      event: "Continued growth, achieved 98% customer satisfaction rate and expanded import-export consulting services.",
     },
   ];
 
   const teamMembers = [
-    { name: "John Smith", role: "CEO & Founder" },
-    { name: "Sarah Johnson", role: "CTO" },
-    { name: "Michael Chen", role: "Lead Developer" },
-    { name: "Emily Davis", role: "Product Manager" },
-    { name: "David Wilson", role: "Senior Developer" },
-    { name: "Lisa Anderson", role: "UX Designer" },
-    { name: "Robert Brown", role: "DevOps Engineer" },
-    { name: "Jennifer Lee", role: "Marketing Director" },
-    { name: "James Taylor", role: "Backend Developer" },
-    { name: "Maria Garcia", role: "Frontend Developer" },
-    { name: "Thomas Martinez", role: "QA Engineer" },
-    { name: "Anna White", role: "Community Manager" },
+    { name: "John Smith", role: "CEO" },
+    { name: "Sarah Johnson", role: "Deputy CEO" },
+    { name: "Michael Chen", role: "Import-Export Manager" },
+    { name: "Emily Davis", role: "Logistics Manager" },
+    { name: "David Wilson", role: "Customs Manager" },
+    { name: "Lisa Anderson", role: "Warehouse Manager" },
+    { name: "Robert Brown", role: "Shipping Manager" },
+    { name: "Jennifer Lee", role: "Consulting Manager" },
   ];
 
   const values = [
     {
-      icon: Code,
-      title: "Open Source and Transparency",
-      description: "Our core values center around openness and transparency. Through open-source development, we ensure that our codebase remains accessible to all, encouraging collaboration and innovation. But our commitment to open source extends beyond just the code itself. We promote an open culture where ideas are freely exchanged, knowledge is shared, and challenges are tackled together.",
-    },
-    {
-      icon: Users,
-      title: "Power of the Community",
-      description: "Trade 4 Me is not just about cutting-edge technology but also about fostering a thriving community. We believe that the collective expertise and diverse perspectives of our community members are the driving force behind our success. We actively involve the community in decision-making processes, roadmap discussions, and development updates. Whether you're a seasoned developer or just starting, you are welcome to join our community and contribute in any way you can.",
+      icon: Shield,
+      title: "Trust & Transparency",
+      description: "We commit to transparency in costs, timelines, and processes. All information is clearly disclosed, ensuring customers understand every step in the import-export process.",
     },
     {
       icon: Globe,
-      title: "Innovation and Excellence",
-      description: "We are committed to providing a transparent development process, welcoming feedback and ideas from everyone involved. Together, we strive to build a modern, user-friendly, and customizable trading solution that empowers businesses of all sizes to succeed in the ever-evolving digital landscape.",
+      title: "Global Network",
+      description: "With a wide network of partners across 50+ countries, we can support businesses importing and exporting goods to and from anywhere in the world efficiently.",
+    },
+    {
+      icon: Award,
+      title: "Professional & Experienced",
+      description: "Over 15 years of experience in import-export, our expert team has deep understanding of legal regulations and customs procedures, ensuring fast and accurate processing.",
     },
   ];
 
@@ -104,7 +84,7 @@ const About = () => {
                   </Link>
                 </li>
                 <li>/</li>
-                <li className="text-foreground">About</li>
+                <li className="text-foreground">About Us</li>
               </ol>
             </nav>
           </div>
@@ -115,13 +95,16 @@ const About = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl">
               <p className="text-lg text-muted-foreground mb-6">
-                As an organization we have a clear purpose that drives all our activity. It is to create an
+                As an organization, we have a clear purpose that drives all our activities. That is to create
               </p>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6">
-                Trading platform for any investment experience
+                Import-export solutions for every business
               </h1>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                We aim to shape the future of automated trading, leveraging the strength of open source and the power of community-driven development. Our team ensures that Trade 4 Me as a platform stays up-to-date, innovative, and tailored to the ever-changing needs of modern trading, making it a leading choice for those seeking a customizable and powerful solution.
+                We aim to shape the future of international trade, leveraging the power of experience and 
+                professionalism. Our team ensures Trade 4 Me is always updated, innovative, and aligned with 
+                the changing needs of modern international trade, becoming the top choice for those seeking 
+                professional and efficient import-export solutions.
               </p>
             </div>
           </div>
@@ -132,10 +115,10 @@ const About = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-12 text-center">
-                History
+                Development History
               </h2>
               <p className="text-lg text-muted-foreground mb-12 text-center">
-                Let's go over the timeline of the key events:
+                Review the timeline of important events:
               </p>
 
               <div className="space-y-8">
@@ -191,7 +174,7 @@ const About = () => {
                 Meet the passionate people behind Trade 4 Me
               </p>
 
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-12">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
                 {teamMembers.map((member, index) => (
                   <div
                     key={index}
@@ -208,21 +191,21 @@ const About = () => {
 
               <div className="text-center">
                 <Button variant="default" size="lg" className="mb-4">
-                  Meet the team
+                  Meet the Team
                 </Button>
                 <div className="mt-8">
                   <h3 className="text-xl font-semibold text-foreground mb-4">
-                    Want to join?
+                    Want to Join?
                   </h3>
                   <p className="text-muted-foreground mb-6">
                     We are always looking for passionate and entrepreneurial people who can contribute to our purpose!
                   </p>
                   <div className="flex flex-col sm:flex-row gap-4 justify-center">
                     <Button variant="outline" size="lg" asChild>
-                      <Link to="/careers">View Current Openings</Link>
+                      <Link to="/careers">View Open Positions</Link>
                     </Button>
                     <Button variant="default" size="lg" asChild>
-                      <Link to="/become-a-partner">General Partner Application</Link>
+                      <Link to="/contact">Contact Us</Link>
                     </Button>
                   </div>
                 </div>
@@ -236,20 +219,20 @@ const About = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Trade 4 Me HQ
+                Trade 4 Me Headquarters
               </h2>
               <div className="space-y-2 mb-8">
-                <p className="text-lg">123 Trading Street</p>
-                <p className="text-lg">10001 New York, USA</p>
-                <p className="text-lg">+1 (555) 123-4567</p>
+                <p className="text-lg">123 Trade Street</p>
+                <p className="text-lg">District 1, Ho Chi Minh City, Vietnam</p>
+                <p className="text-lg">+84 90 123 4567</p>
                 <p className="text-lg">
-                  <a href="mailto:contact@trade4me.com" className="hover:underline">
-                    contact@trade4me.com
+                  <a href="mailto:info@trade4me.com" className="hover:underline">
+                    info@trade4me.com
                   </a>
                 </p>
               </div>
               <Button variant="heroOutline" size="lg" asChild>
-                <Link to="/contact">Get in Touch</Link>
+                <Link to="/contact">Contact Us</Link>
               </Button>
             </div>
           </div>
@@ -261,4 +244,3 @@ const About = () => {
 };
 
 export default About;
-

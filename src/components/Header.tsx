@@ -18,8 +18,8 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border">
       {/* Top bar */}
       <div className="bg-primary text-primary-foreground py-2 text-center text-sm">
-        <span className="font-semibold bg-primary-foreground/20 px-2 py-0.5 rounded mr-2">NEW</span>
-        Automated trading solution for every investor
+        <span className="font-semibold bg-primary-foreground/20 px-2 py-0.5 rounded mr-2">HOTLINE</span>
+        Contact us now: +84 90 123 4567 - Email: info@trade4me.com
       </div>
 
       {/* Main header */}

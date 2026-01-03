@@ -10,83 +10,83 @@ import {
   Award,
   CheckCircle2,
   Calendar,
-  MapPin,
   Video,
-  Mail
+  Mail,
+  Phone
 } from "lucide-react";
 
 const Training = () => {
   const trainingTypes = [
     {
       icon: Users,
-      title: "On-site Training",
-      description: "Bring our trainers to your location for hands-on, personalized training sessions tailored to your team's needs.",
+      title: "Đào tạo tại chỗ",
+      description: "Đưa chuyên gia đào tạo đến địa điểm của bạn để có các buổi đào tạo thực hành, cá nhân hóa phù hợp với nhu cầu của đội ngũ.",
       features: [
-        "Customized curriculum",
-        "Hands-on exercises",
-        "Team-specific focus",
-        "Direct Q&A sessions",
+        "Chương trình tùy chỉnh",
+        "Bài tập thực hành",
+        "Tập trung vào đội ngũ cụ thể",
+        "Phiên hỏi đáp trực tiếp",
       ],
     },
     {
       icon: Video,
-      title: "Remote Training",
-      description: "Join our online training sessions from anywhere in the world. Interactive sessions with live demonstrations and Q&A.",
+      title: "Đào tạo từ xa",
+      description: "Tham gia các buổi đào tạo trực tuyến từ bất kỳ đâu trên thế giới. Các phiên tương tác với trình diễn trực tiếp và Q&A.",
       features: [
-        "Live interactive sessions",
-        "Recorded sessions available",
-        "Global accessibility",
-        "Flexible scheduling",
+        "Phiên tương tác trực tiếp",
+        "Có sẵn bản ghi",
+        "Truy cập toàn cầu",
+        "Lịch học linh hoạt",
       ],
     },
     {
       icon: BookOpen,
-      title: "Online Course",
-      description: "Self-paced online courses covering Trade 4 Me fundamentals to advanced topics. Learn at your own pace.",
+      title: "Khóa học trực tuyến",
+      description: "Các khóa học tự học trực tuyến bao gồm từ kiến thức cơ bản đến nâng cao về xuất nhập khẩu. Học theo tốc độ của riêng bạn.",
       features: [
-        "Self-paced learning",
-        "Comprehensive materials",
-        "Practical exercises",
-        "Certificate of completion",
+        "Học tự điều chỉnh",
+        "Tài liệu toàn diện",
+        "Bài tập thực hành",
+        "Chứng chỉ hoàn thành",
       ],
     },
     {
       icon: Award,
-      title: "Certification Program",
-      description: "Become a certified Trade 4 Me developer or architect. Validate your expertise with industry-recognized certification.",
+      title: "Chương trình Chứng nhận",
+      description: "Trở thành chuyên viên xuất nhập khẩu được chứng nhận. Xác nhận chuyên môn của bạn với chứng chỉ được công nhận trong ngành.",
       features: [
-        "Official certification",
-        "Exam preparation",
-        "Industry recognition",
-        "Career advancement",
+        "Chứng chỉ chính thức",
+        "Chuẩn bị thi",
+        "Công nhận trong ngành",
+        "Thăng tiến nghề nghiệp",
       ],
     },
   ];
 
   const courses = [
     {
-      title: "Trade 4 Me Fundamentals",
-      duration: "2 days",
-      level: "Beginner",
-      description: "Learn the basics of Trade 4 Me platform, architecture, and core concepts.",
+      title: "Kiến thức Cơ bản về Xuất Nhập Khẩu",
+      duration: "2 ngày",
+      level: "Cơ bản",
+      description: "Tìm hiểu những điều cơ bản về xuất nhập khẩu, quy định và khái niệm cốt lõi.",
     },
     {
-      title: "Advanced Trading Strategies",
-      duration: "3 days",
-      level: "Advanced",
-      description: "Deep dive into advanced trading strategies, automation, and optimization techniques.",
+      title: "Thủ tục Hải quan Nâng cao",
+      duration: "3 ngày",
+      level: "Nâng cao",
+      description: "Đi sâu vào các kỹ thuật thủ tục hải quan nâng cao, tối ưu hóa và các phương pháp hay nhất.",
     },
     {
-      title: "API Development",
-      duration: "2 days",
-      level: "Intermediate",
-      description: "Master Trade 4 Me API development and integration patterns.",
+      title: "Incoterms & Hợp đồng Quốc tế",
+      duration: "2 ngày",
+      level: "Trung cấp",
+      description: "Làm chủ Incoterms và các mẫu hợp đồng quốc tế phổ biến.",
     },
     {
-      title: "Platform Customization",
-      duration: "3 days",
-      level: "Advanced",
-      description: "Learn how to customize and extend Trade 4 Me to meet your specific requirements.",
+      title: "Quản lý Logistics & Chuỗi cung ứng",
+      duration: "3 ngày",
+      level: "Nâng cao",
+      description: "Tìm hiểu cách quản lý và tối ưu hóa chuỗi cung ứng logistics của bạn.",
     },
   ];
 
@@ -101,17 +101,17 @@ const Training = () => {
               <ol className="flex items-center gap-2">
                 <li>
                   <Link to="/" className="hover:text-primary transition-colors">
-                    Home
+                    Trang chủ
                   </Link>
                 </li>
                 <li>/</li>
                 <li>
                   <Link to="/services" className="hover:text-primary transition-colors">
-                    Services
+                    Dịch vụ
                   </Link>
                 </li>
                 <li>/</li>
-                <li className="text-foreground">Training</li>
+                <li className="text-foreground">Đào tạo</li>
               </ol>
             </nav>
           </div>
@@ -122,18 +122,28 @@ const Training = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl">
               <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-                Professional Training Programs
+                Chương Trình Đào Tạo Chuyên Nghiệp
               </h1>
               <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-                Whether you prefer remote or on-site training, our experienced trainers deliver comprehensive programs tailored to your team's needs. 
-                We cover a wide range of topics, including platform architecture, customization, module development, and best practices.
+                Dù bạn thích đào tạo từ xa hay tại chỗ, các chuyên gia đào tạo giàu kinh nghiệm của chúng tôi 
+                cung cấp các chương trình toàn diện phù hợp với nhu cầu của đội ngũ bạn. 
+                Chúng tôi bao gồm nhiều chủ đề, bao gồm quy định xuất nhập khẩu, thủ tục hải quan, 
+                quản lý logistics và các phương pháp hay nhất.
               </p>
-              <Button variant="hero" size="lg" className="gap-2" asChild>
-                <Link to="/contact">
-                  <Mail size={18} />
-                  Request Training
-                </Link>
-              </Button>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Button variant="hero" size="lg" className="gap-2" asChild>
+                  <Link to="/contact">
+                    <Mail size={18} />
+                    Yêu cầu đào tạo
+                  </Link>
+                </Button>
+                <Button variant="outline" size="lg" asChild>
+                  <a href="tel:+84901234567">
+                    <Phone size={18} />
+                    Hotline: 090 123 4567
+                  </a>
+                </Button>
+              </div>
             </div>
           </div>
         </section>
@@ -143,10 +153,10 @@ const Training = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 text-center">
-                Training Formats
+                Hình Thức Đào Tạo
               </h2>
               <p className="text-lg text-muted-foreground text-center mb-12">
-                Choose the training format that works best for your team
+                Chọn hình thức đào tạo phù hợp nhất với đội ngũ của bạn
               </p>
 
               <div className="grid md:grid-cols-2 gap-8">
@@ -187,10 +197,10 @@ const Training = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 text-center">
-                Available Courses
+                Các Khóa Học Có Sẵn
               </h2>
               <p className="text-lg text-muted-foreground text-center mb-12">
-                Comprehensive training programs for all skill levels
+                Chương trình đào tạo toàn diện cho mọi cấp độ kỹ năng
               </p>
 
               <div className="grid md:grid-cols-2 gap-6">
@@ -211,7 +221,7 @@ const Training = () => {
                     </div>
                     <p className="text-muted-foreground mb-4">{course.description}</p>
                     <Button variant="outline" size="sm">
-                      Learn More
+                      Tìm hiểu thêm
                     </Button>
                   </div>
                 ))}
@@ -225,15 +235,15 @@ const Training = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Ready to Enhance Your Team's Skills?
+                Sẵn Sàng Nâng Cao Kỹ Năng Đội Ngũ?
               </h2>
               <p className="text-lg mb-8 opacity-90">
-                Contact us to discuss your training needs and find the perfect program for your team.
+                Liên hệ với chúng tôi để thảo luận về nhu cầu đào tạo của bạn và tìm chương trình hoàn hảo cho đội ngũ.
               </p>
               <Button variant="heroOutline" size="lg" className="gap-2" asChild>
                 <Link to="/contact">
                   <Mail size={18} />
-                  Request Training Information
+                  Yêu cầu Thông tin Đào tạo
                 </Link>
               </Button>
             </div>
@@ -246,4 +256,3 @@ const Training = () => {
 };
 
 export default Training;
-

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Checkbox } from "@/components/ui/checkbox";
@@ -15,10 +16,10 @@ const NewsletterSection = () => {
             <Mail className="w-8 h-8 text-primary" />
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Stay Updated with the Latest News
+            Stay Updated with Latest News
           </h2>
           <p className="text-lg text-muted-foreground mb-8">
-            Subscribe to receive news about Trade 4 Me and the trading market.
+            Subscribe to receive news about import-export regulations, customs procedures, and the latest updates.
           </p>
 
           <form className="space-y-4">
@@ -39,10 +40,10 @@ const NewsletterSection = () => {
             <div className="flex items-start gap-3 text-left">
               <Checkbox id="terms" className="mt-1" />
               <label htmlFor="terms" className="text-sm text-muted-foreground">
-                By completing and submitting this form, you understand and agree that your 
-                use of Trade 4 Me website is subject to the{" "}
-                <a href="#" className="text-primary hover:underline">Terms and Conditions</a> and{" "}
-                <a href="#" className="text-primary hover:underline">Privacy Policy</a>.
+                By completing and submitting this form, you understand and agree that your use of Trade 4 Me website 
+                is subject to{" "}
+                <Link to="/terms" className="text-primary hover:underline">Terms of Use</Link> and{" "}
+                <Link to="/privacy-policy" className="text-primary hover:underline">Privacy Policy</Link>.
               </label>
             </div>
           </form>
