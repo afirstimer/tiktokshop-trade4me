@@ -16,37 +16,37 @@ import {
 const TechnicalSupport = () => {
   const supportTiers = [
     {
-      title: "Hỗ trợ Cơ bản",
-      description: "Hỗ trợ miễn phí qua email và hotline. Nhận trợ giúp từ đội ngũ chuyên viên của chúng tôi.",
+      title: "Basic Support",
+      description: "Free support via email and hotline. Get help from our expert team.",
       features: [
-        "Hỗ trợ qua email",
-        "Hotline tư vấn",
-        "Tài liệu hướng dẫn",
-        "Giải đáp thắc mắc",
+        "Email support",
+        "Hotline consultation",
+        "Documentation",
+        "Question answering",
       ],
-      price: "Miễn phí",
+      price: "Free",
     },
     {
-      title: "Hỗ trợ Tiêu chuẩn",
-      description: "Hỗ trợ qua email với thời gian phản hồi phù hợp cho hầu hết các dự án.",
+      title: "Standard Support",
+      description: "Email support with response times suitable for most projects.",
       features: [
-        "Hỗ trợ email ưu tiên",
-        "Phản hồi trong giờ làm việc",
-        "Truy cập tài liệu",
-        "Báo cáo vấn đề",
+        "Priority email support",
+        "Business hours response",
+        "Documentation access",
+        "Issue reporting",
       ],
-      price: "Theo gói dịch vụ",
+      price: "Included with service package",
     },
     {
-      title: "Hỗ trợ Cao cấp",
-      description: "Hỗ trợ ưu tiên với thời gian phản hồi nhanh hơn và kênh hỗ trợ chuyên dụng.",
+      title: "Premium Support",
+      description: "Priority support with faster response times and dedicated support channels.",
       features: [
-        "Hỗ trợ email ưu tiên cao",
-        "Thời gian phản hồi nhanh",
-        "Hỗ trợ qua điện thoại",
-        "Chuyên viên hỗ trợ chuyên dụng",
+        "High priority email support",
+        "Fast response times",
+        "Phone support",
+        "Dedicated support specialist",
       ],
-      price: "Liên hệ bán hàng",
+      price: "Contact Sales",
     },
   ];
 
@@ -54,49 +54,49 @@ const TechnicalSupport = () => {
     {
       icon: Phone,
       title: "Hotline",
-      description: "Gọi điện trực tiếp để được tư vấn nhanh chóng",
+      description: "Call directly for quick consultation",
       link: "tel:+84901234567",
-      contact: "090 123 4567",
+      contact: "+84 90 123 4567",
     },
     {
       icon: Mail,
       title: "Email",
-      description: "Gửi email cho chúng tôi và nhận phản hồi trong vòng 24 giờ",
+      description: "Send us an email and receive a response within 24 hours",
       link: "mailto:support@trade4me.com",
       contact: "support@trade4me.com",
     },
     {
       icon: MessageCircle,
-      title: "Tư vấn trực tiếp",
-      description: "Đến văn phòng của chúng tôi để được tư vấn trực tiếp",
+      title: "Direct Consultation",
+      description: "Visit our office for direct consultation",
       link: "/contact",
-      contact: "123 Đường Thương mại, Q1, TP.HCM",
+      contact: "123 Trade Street, District 1, Ho Chi Minh City",
     },
     {
       icon: FileText,
-      title: "Tài liệu",
-      description: "Truy cập tài liệu hướng dẫn và câu hỏi thường gặp",
+      title: "Documentation",
+      description: "Access documentation and frequently asked questions",
       link: "/documentation",
-      contact: "Xem tài liệu",
+      contact: "View Documentation",
     },
   ];
 
   const faqs = [
     {
-      question: "Thời gian xử lý thủ tục xuất nhập khẩu mất bao lâu?",
-      answer: "Thời gian xử lý phụ thuộc vào loại hàng hóa và thị trường. Thông thường từ 3-7 ngày làm việc cho thủ tục cơ bản.",
+      question: "How long does import-export procedure processing take?",
+      answer: "Processing time depends on the type of goods and market. Typically 3-7 business days for basic procedures.",
     },
     {
-      question: "Chi phí dịch vụ được tính như thế nào?",
-      answer: "Chi phí được tính dựa trên giá trị hàng hóa, loại hàng, thị trường và dịch vụ yêu cầu. Chúng tôi sẽ báo giá chi tiết sau khi nhận thông tin.",
+      question: "How are service costs calculated?",
+      answer: "Costs are calculated based on goods value, type of goods, market, and required services. We will provide a detailed quote after receiving information.",
     },
     {
-      question: "Có hỗ trợ bảo hiểm hàng hóa không?",
-      answer: "Có, chúng tôi cung cấp dịch vụ bảo hiểm hàng hóa cho mọi lô hàng xuất nhập khẩu để đảm bảo an toàn tối đa.",
+      question: "Do you support cargo insurance?",
+      answer: "Yes, we provide cargo insurance services for all import-export shipments to ensure maximum safety.",
     },
     {
-      question: "Có hỗ trợ xử lý hàng hóa đặc biệt không?",
-      answer: "Có, chúng tôi có kinh nghiệm xử lý nhiều loại hàng hóa đặc biệt như hàng nguy hiểm, hàng dễ vỡ, hàng có yêu cầu bảo quản đặc biệt.",
+      question: "Do you support handling special goods?",
+      answer: "Yes, we have experience handling various special goods such as dangerous goods, fragile items, and goods requiring special storage conditions.",
     },
   ];
 
@@ -111,17 +111,17 @@ const TechnicalSupport = () => {
               <ol className="flex items-center gap-2">
                 <li>
                   <Link to="/" className="hover:text-primary transition-colors">
-                    Trang chủ
+                    Home
                   </Link>
                 </li>
                 <li>/</li>
                 <li>
                   <Link to="/services" className="hover:text-primary transition-colors">
-                    Dịch vụ
+                    Services
                   </Link>
                 </li>
                 <li>/</li>
-                <li className="text-foreground">Hỗ trợ kỹ thuật</li>
+                <li className="text-foreground">Technical Support</li>
               </ol>
             </nav>
           </div>
@@ -132,23 +132,23 @@ const TechnicalSupport = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl">
               <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-                Hỗ Trợ Kỹ Thuật & Khách Hàng
+                Technical & Customer Support
               </h1>
               <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-                Nhận sự trợ giúp bạn cần khi bạn cần. Đội ngũ hỗ trợ của chúng tôi luôn sẵn sàng hỗ trợ bạn 
-                với các câu hỏi kỹ thuật, xử lý sự cố và hướng dẫn sử dụng dịch vụ Trade 4 Me hiệu quả.
+                Get the help you need when you need it. Our support team is always ready to assist you 
+                with technical questions, troubleshooting, and guidance on using Trade 4 Me services effectively.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button variant="hero" size="lg" className="gap-2" asChild>
                   <a href="tel:+84901234567">
                     <Phone size={18} />
-                    Gọi ngay: 090 123 4567
+                    Call Now: +84 90 123 4567
                   </a>
                 </Button>
                 <Button variant="outline" size="lg" asChild>
                   <Link to="/contact">
                     <Mail size={18} />
-                    Gửi yêu cầu hỗ trợ
+                    Submit Support Request
                   </Link>
                 </Button>
               </div>
@@ -161,10 +161,10 @@ const TechnicalSupport = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 text-center">
-                Kênh Hỗ Trợ
+                Support Channels
               </h2>
               <p className="text-lg text-muted-foreground text-center mb-12">
-                Chọn cách liên hệ phù hợp nhất với bạn
+                Choose the contact method that works best for you
               </p>
 
               <div className="grid md:grid-cols-2 gap-6">
@@ -206,10 +206,10 @@ const TechnicalSupport = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 text-center">
-                Gói Hỗ Trợ
+                Support Packages
               </h2>
               <p className="text-lg text-muted-foreground text-center mb-12">
-                Chọn gói hỗ trợ phù hợp với nhu cầu của bạn
+                Choose the support package that fits your needs
               </p>
 
               <div className="grid md:grid-cols-3 gap-8">
@@ -238,7 +238,7 @@ const TechnicalSupport = () => {
                       ))}
                     </ul>
                     <Button variant="outline" className="w-full" asChild>
-                      <Link to="/contact">Liên hệ</Link>
+                      <Link to="/contact">Contact</Link>
                     </Button>
                   </div>
                 ))}
@@ -252,10 +252,10 @@ const TechnicalSupport = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 text-center">
-                Câu Hỏi Thường Gặp
+                Frequently Asked Questions
               </h2>
               <p className="text-lg text-muted-foreground text-center mb-12">
-                Tìm câu trả lời cho các câu hỏi phổ biến
+                Find answers to common questions
               </p>
 
               <div className="space-y-6">
@@ -282,22 +282,22 @@ const TechnicalSupport = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Vẫn Cần Hỗ Trợ?
+                Still Need Support?
               </h2>
               <p className="text-lg mb-8 opacity-90">
-                Đội ngũ hỗ trợ của chúng tôi luôn sẵn sàng giúp đỡ bạn. Liên hệ với chúng tôi ngay hôm nay.
+                Our support team is always ready to help you. Contact us today.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button variant="heroOutline" size="lg" className="gap-2" asChild>
                   <a href="tel:+84901234567">
                     <Phone size={18} />
-                    Gọi: 090 123 4567
+                    Call: +84 90 123 4567
                   </a>
                 </Button>
                 <Button variant="heroOutline" size="lg" className="gap-2" asChild>
                   <Link to="/contact">
                     <Mail size={18} />
-                    Gửi Email
+                    Send Email
                   </Link>
                 </Button>
               </div>
