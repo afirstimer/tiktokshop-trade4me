@@ -16,46 +16,46 @@ const Consulting = () => {
   const services = [
     {
       icon: FileCheck,
-      title: "Tư vấn Thủ tục Xuất Nhập Khẩu",
-      description: "Nhận tư vấn chuyên sâu về các quy định, thủ tục xuất nhập khẩu. Chúng tôi giúp bạn hiểu rõ quy trình và chuẩn bị đầy đủ hồ sơ cần thiết.",
+      title: "Import-Export Procedure Consultation",
+      description: "Receive in-depth consultation on import-export regulations and procedures. We help you understand the process and prepare all necessary documents.",
       features: [
-        "Tư vấn quy định pháp luật",
-        "Hướng dẫn chuẩn bị hồ sơ",
-        "Tư vấn thuế, phí",
-        "Tư vấn Incoterms",
+        "Legal regulation consultation",
+        "Document preparation guidance",
+        "Tax and fee consultation",
+        "Incoterms consultation",
       ],
     },
     {
       icon: Users,
-      title: "Tư vấn Chiến lược Xuất Nhập Khẩu",
-      description: "Tư vấn chiến lược xuất nhập khẩu phù hợp với doanh nghiệp của bạn. Chúng tôi giúp bạn lập kế hoạch và tối ưu hóa quy trình.",
+      title: "Import-Export Strategy Consultation",
+      description: "Consultation on import-export strategies suitable for your business. We help you plan and optimize processes.",
       features: [
-        "Phân tích nhu cầu",
-        "Lập kế hoạch xuất nhập khẩu",
-        "Tối ưu hóa chi phí",
-        "Đánh giá rủi ro",
+        "Needs analysis",
+        "Import-export planning",
+        "Cost optimization",
+        "Risk assessment",
       ],
     },
     {
       icon: Target,
-      title: "Tư vấn Thị trường",
-      description: "Tư vấn về thị trường xuất nhập khẩu, giúp bạn xác định cơ hội và thách thức khi mở rộng kinh doanh quốc tế.",
+      title: "Market Consultation",
+      description: "Consultation on import-export markets, helping you identify opportunities and challenges when expanding international business.",
       features: [
-        "Phân tích thị trường",
-        "Đánh giá cơ hội",
-        "Tư vấn sản phẩm phù hợp",
-        "Chiến lược mở rộng",
+        "Market analysis",
+        "Opportunity assessment",
+        "Product suitability consultation",
+        "Expansion strategy",
       ],
     },
     {
       icon: MessageSquare,
-      title: "Tư vấn Pháp lý",
-      description: "Tư vấn về các vấn đề pháp lý liên quan đến xuất nhập khẩu, giúp doanh nghiệp tuân thủ đúng quy định.",
+      title: "Legal Consultation",
+      description: "Consultation on legal issues related to import-export, helping businesses comply with regulations.",
       features: [
-        "Tư vấn quy định pháp luật",
-        "Đánh giá rủi ro pháp lý",
-        "Hỗ trợ giải quyết vấn đề",
-        "Cập nhật quy định mới",
+        "Legal regulation consultation",
+        "Legal risk assessment",
+        "Issue resolution support",
+        "New regulation updates",
       ],
     },
   ];
@@ -63,23 +63,23 @@ const Consulting = () => {
   const process = [
     {
       step: "1",
-      title: "Tiếp nhận yêu cầu",
-      description: "Chúng tôi lắng nghe nhu cầu và thách thức của bạn trong một cuộc tư vấn miễn phí.",
+      title: "Receive Request",
+      description: "We listen to your needs and challenges in a free consultation.",
     },
     {
       step: "2",
-      title: "Phân tích & Đề xuất",
-      description: "Chúng tôi phân tích tình huống và tạo đề xuất tùy chỉnh với timeline và kết quả mong đợi.",
+      title: "Analysis & Proposal",
+      description: "We analyze the situation and create a customized proposal with timeline and expected outcomes.",
     },
     {
       step: "3",
-      title: "Thực hiện tư vấn",
-      description: "Các chuyên gia tư vấn của chúng tôi làm việc chặt chẽ với bạn để đạt được kết quả.",
+      title: "Execute Consultation",
+      description: "Our consulting experts work closely with you to achieve results.",
     },
     {
       step: "4",
-      title: "Theo dõi & Hỗ trợ",
-      description: "Chúng tôi đảm bảo bạn có mọi thứ cần thiết để thành công độc lập.",
+      title: "Follow-up & Support",
+      description: "We ensure you have everything needed to succeed independently.",
     },
   ];
 
@@ -94,17 +94,17 @@ const Consulting = () => {
               <ol className="flex items-center gap-2">
                 <li>
                   <Link to="/" className="hover:text-primary transition-colors">
-                    Trang chủ
+                    Home
                   </Link>
                 </li>
                 <li>/</li>
                 <li>
                   <Link to="/services" className="hover:text-primary transition-colors">
-                    Dịch vụ
+                    Services
                   </Link>
                 </li>
                 <li>/</li>
-                <li className="text-foreground">Tư vấn</li>
+                <li className="text-foreground">Consulting</li>
               </ol>
             </nav>
           </div>
@@ -115,24 +115,24 @@ const Consulting = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl">
               <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-                Dịch Vụ Tư Vấn Chuyên Nghiệp
+                Professional Consulting Services
               </h1>
               <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-                Các chuyên gia tư vấn của chúng tôi cung cấp hướng dẫn và hỗ trợ có giá trị trong các khía cạnh khác nhau 
-                của dự án xuất nhập khẩu của bạn. Chúng tôi tiến hành các buổi tư vấn để giúp bạn thiết kế 
-                giải pháp xuất nhập khẩu hiệu quả và có thể mở rộng.
+                Our expert consultants provide valuable guidance and support across various aspects 
+                of your import-export projects. We conduct consultation sessions to help you design 
+                efficient and scalable import-export solutions.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button variant="hero" size="lg" className="gap-2" asChild>
                   <Link to="/contact">
                     <Mail size={18} />
-                    Liên hệ ngay
+                    Contact Us Now
                   </Link>
                 </Button>
                 <Button variant="outline" size="lg" asChild>
                   <a href="tel:+84901234567">
                     <Phone size={18} />
-                    Hotline: 090 123 4567
+                    Hotline: +84 90 123 4567
                   </a>
                 </Button>
               </div>
@@ -145,10 +145,10 @@ const Consulting = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 text-center">
-                Dịch Vụ Tư Vấn Của Chúng Tôi
+                Our Consulting Services
               </h2>
               <p className="text-lg text-muted-foreground text-center mb-12">
-                Tư vấn toàn diện để giúp bạn thành công với xuất nhập khẩu
+                Comprehensive consultation to help you succeed with import-export
               </p>
 
               <div className="grid md:grid-cols-2 gap-8">
@@ -189,10 +189,10 @@ const Consulting = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 text-center">
-                Quy Trình Tư Vấn
+                Consulting Process
               </h2>
               <p className="text-lg text-muted-foreground text-center mb-12">
-                Các bước đơn giản để bắt đầu với dịch vụ tư vấn của chúng tôi
+                Simple steps to get started with our consulting services
               </p>
 
               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -222,15 +222,15 @@ const Consulting = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Sẵn Sàng Nhận Tư Vấn Chuyên Nghiệp?
+                Ready for Professional Consultation?
               </h2>
               <p className="text-lg mb-8 opacity-90">
-                Liên hệ với đội ngũ tư vấn của chúng tôi để thảo luận về cách chúng tôi có thể giúp bạn thành công với xuất nhập khẩu.
+                Contact our consulting team to discuss how we can help you succeed with import-export.
               </p>
               <Button variant="heroOutline" size="lg" className="gap-2" asChild>
                 <Link to="/contact">
                   <Mail size={18} />
-                  Liên hệ Tư vấn
+                  Contact for Consultation
                 </Link>
               </Button>
             </div>
